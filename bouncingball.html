@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h1{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .box1 {
+            height: 40px;
+            width: 40px;
+            background-color: rgb(113, 182, 203);
+            border-radius: 70px;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            animation: animateX 1s linear infinite, animateY 0.2s ease-out infinite alternate; 
+        }
+
+        .box {
+            position: relative;
+            height: 60vh;
+            width: 100vw;
+            background-color: rgb(89, 91, 91);
+
+        }
+
+        @keyframes animateX {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 100%;
+            }
+        }
+
+        @keyframes animateY {
+            from {
+                bottom: 0;
+            }
+
+            to {
+                bottom: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 >BOUNCING BALL</h1>
+    <div class="box">
+        <div class="box1"></div>
+    </div>
+
+</body>
+
+</html>
